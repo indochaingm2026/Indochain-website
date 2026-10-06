@@ -1,15 +1,17 @@
-# PT Indochain Vercel Static Website
+# PT Indochain Website
 
-Upload this folder to a GitHub repository and import it into Vercel, or deploy the folder with the Vercel CLI.
+Blue industrial B2B redesign for PT Indochain.
 
-Before publishing, replace:
-- YOUR_PHONE_NUMBER
-- YOUR_EMAIL
-- YOUR OFFICE ADDRESS
-- Google Maps embed
-- Instagram URL/feed
-- Company profile/history/vision/mission
-- Product images and verified product specifications
-- Contact-form backend/email integration
+## Contact
+- Address: Jl. Kebon Jeruk III No. 95A, Tamansari, Jakarta Barat 11160, Indonesia
+- Phone: +62 21 3028 6868
+- Email: info@indochain.co.id
+- Instagram: @indochain.co.id
+- WhatsApp: +62 812 9801 1998
 
-The contact form currently shows a frontend success message only; connect it to a real backend such as Formspree, Resend, Supabase, or your preferred email service before production.
+## Brand
+Vision: To be the partner that industries and buyers worldwide trust for quality supply from Indonesia.
+
+Mission: We build long-term partnerships by delivering consistent quality, fair prices, and honest service.
+
+Taglines: Quality you can rely on. / Your trusted supply partner.
