@@ -33,3 +33,8 @@ Premium responsive corporate website for PT Indochain Global Makmur.
 - Contact
 
 This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
+
+
+### Division imagery update
+- Foundry Materials: replaced with the supplied powder-mound image (`foundry-division.jpg`).
+- Agricultural Products: uses a high-resolution Pexels corn-kernel photograph (5,472 × 3,648 px), free to use under the Pexels license. Source: https://www.pexels.com/photo/close-up-shot-of-a-corn-7877996/

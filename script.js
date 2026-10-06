@@ -9,8 +9,6 @@ const hero=document.querySelector('.hero-slider');
 if(hero){
   const slides=[...hero.querySelectorAll('.hero-slide')];
   const dots=[...hero.querySelectorAll('.hero-dot')];
-  const prev=hero.querySelector('.hero-prev');
-  const next=hero.querySelector('.hero-next');
   const progress=hero.querySelector('.hero-progress span');
   let current=0; let timer=null; const duration=5500;
   function showSlide(index){
@@ -20,8 +18,6 @@ if(hero){
     progress.style.animation='none'; void progress.offsetWidth; progress.style.animation=`heroProgress ${duration}ms linear`;
   }
   function start(){clearInterval(timer); timer=setInterval(()=>showSlide(current+1),duration); showSlide(current);}
-  prev?.addEventListener('click',()=>{showSlide(current-1);start();});
-  next?.addEventListener('click',()=>{showSlide(current+1);start();});
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>{showSlide(i);start();}));
   hero.addEventListener('mouseenter',()=>{clearInterval(timer);hero.classList.add('is-paused');progress.style.animationPlayState='paused';});
   hero.addEventListener('mouseleave',()=>{hero.classList.remove('is-paused');start();});
