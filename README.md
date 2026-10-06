@@ -1,6 +1,6 @@
-# PT Indochain Website
+# PT Indochain — Corporate Website
 
-Blue industrial B2B redesign for PT Indochain.
+Premium responsive corporate website for PT Indochain Global Makmur.
 
 ## Contact
 - Address: Jl. Kebon Jeruk III No. 95A, Tamansari, Jakarta Barat 11160, Indonesia
@@ -10,8 +10,26 @@ Blue industrial B2B redesign for PT Indochain.
 - WhatsApp: +62 812 9801 1998
 
 ## Brand
-Vision: To be the partner that industries and buyers worldwide trust for quality supply from Indonesia.
+**Tagline:** Quality you can rely on.
 
-Mission: We build long-term partnerships by delivering consistent quality, fair prices, and honest service.
+**Vision:** To be the partner that industries and buyers worldwide trust for quality supply from Indonesia.
 
-Taglines: Quality you can rely on. / Your trusted supply partner.
+**Mission:** We build long-term partnerships by delivering consistent quality, fair prices, and honest service.
+
+## Core Values
+- Reliability — we deliver what we promise.
+- Quality — consistent products and standards.
+- Integrity — transparent, honest dealings.
+- Partnership — we grow when our customers grow.
+
+## Pages
+- Home
+- About
+- Products
+- Foundry Materials
+- Agricultural Products
+- Product Detail
+- News
+- Contact
+
+This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
