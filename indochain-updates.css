@@ -219,3 +219,20 @@ body.ic-no-scroll{overflow:hidden}
 @media(prefers-reduced-motion:reduce){
   .ic-leaf,.ic-book{transition-duration:.01s!important}
 }
+
+/* ---------- 4. Dedicated product pages ---------- */
+.product-navigation-note{padding-top:10px}
+.product-detail{display:grid;gap:42px;align-items:start}
+.product-detail-media{min-width:0}
+.product-photo{border:1px solid var(--ic-line);border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 14px 34px rgba(15,31,61,.12);min-height:280px;display:flex;align-items:center;justify-content:center}
+.product-photo img{display:block;width:100%;height:auto;max-height:620px;object-fit:contain}
+.product-thumbs{display:flex;gap:10px;margin-top:12px}
+.product-thumbs button{width:70px;height:70px;padding:0;border:2px solid transparent;border-radius:10px;overflow:hidden;background:#fff;cursor:pointer;box-shadow:0 2px 8px rgba(15,31,61,.12)}
+.product-thumbs button:hover{border-color:var(--ic-blue)}
+.product-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.product-detail-copy{min-width:0}
+.product-detail-copy h2{margin:6px 0 16px;font-size:clamp(1.8rem,5vw,3rem);line-height:1.08;color:var(--ic-ink)}
+.ic-video{margin-top:34px;padding-top:28px;border-top:1px solid var(--ic-line)}
+.video-frame{position:relative;margin-top:12px;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 12px 30px rgba(15,31,61,.16)}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(min-width:900px){.product-detail{grid-template-columns:minmax(300px,520px) 1fr;gap:64px}.product-detail-media{position:sticky;top:96px}.product-photo{min-height:420px}}
