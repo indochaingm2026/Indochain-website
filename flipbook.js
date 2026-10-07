@@ -20,7 +20,9 @@
   var countEl = document.getElementById('icCount');
   var gridEl = document.getElementById('icGrid');
   var gridBtn = document.getElementById('icGridBtn');
-  var zoomBtn = document.getElementById('icZoomBtn');
+  var zoomInBtn = document.getElementById('icZoomIn');
+  var zoomOutBtn = document.getElementById('icZoomOut');
+  var shareBtn = document.getElementById('icShareBtn');
   var fullBtn = document.getElementById('icFullBtn');
   var backTpl = document.getElementById('icBackTpl');
 
@@ -237,13 +239,30 @@
   }
   if (gridBtn) gridBtn.addEventListener('click', function () { toggleGrid(); });
 
-  /* ---------- zoom ---------- */
-  if (zoomBtn) zoomBtn.addEventListener('click', function () {
-    zoom = (zoom === 1) ? 1.8 : 1;
+  /* ---------- zoom (steps of 0.5, 1x to 2.5x) ---------- */
+  function setZoom(z) {
+    zoom = Math.max(1, Math.min(2.5, z));
     root.classList.toggle('is-zoom', zoom > 1);
-    zoomBtn.classList.toggle('is-on', zoom > 1);
+    if (zoomOutBtn) zoomOutBtn.style.opacity = zoom > 1 ? '1' : '.35';
+    if (zoomInBtn) zoomInBtn.style.opacity = zoom < 2.5 ? '1' : '.35';
     layout();
     stage.scrollLeft = 0;
+  }
+  if (zoomInBtn) zoomInBtn.addEventListener('click', function () { setZoom(zoom + 0.5); });
+  if (zoomOutBtn) zoomOutBtn.addEventListener('click', function () { setZoom(zoom - 0.5); });
+  if (zoomOutBtn) zoomOutBtn.style.opacity = '.35';
+
+  /* ---------- share ---------- */
+  if (shareBtn) shareBtn.addEventListener('click', function () {
+    var data = { title: document.title, url: location.href };
+    if (navigator.share) { navigator.share(data).catch(function () {}); return; }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(location.href).then(function () {
+        shareBtn.setAttribute('title', 'Link copied');
+        shareBtn.classList.add('is-on');
+        setTimeout(function () { shareBtn.classList.remove('is-on'); shareBtn.setAttribute('title', 'Share'); }, 1600);
+      });
+    }
   });
 
   /* ---------- full screen (CSS based, works on iPhone too) ---------- */

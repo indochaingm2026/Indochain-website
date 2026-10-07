@@ -40,9 +40,8 @@ This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
 - Agricultural Products: uses a high-resolution Pexels corn-kernel photograph (5,472 × 3,648 px), free to use under the Pexels license. Source: https://www.pexels.com/photo/close-up-shot-of-a-corn-7877996/
 
 ### Update (Oct 2026)
-- Home hero slide 1 now uses the container-ship photo (`hero-container-ocean.jpg`); fixed a missing quote in its CSS `url()`.
-- Home: the empty grey area under "View Full Catalog" is replaced by a catalog call-to-action card.
-- Catalog e-book (`catalog-ebook.html`) is now a page-flip book (`flipbook.js`): two-page spread on desktop, single page on phone.
-- Each foundry product has its own page (bentobond.html, exothermic-piping-compound.html, patching-material.html, slag-x-conditioner.html, sea-coal.html, superbond-plus.html); product photos are in the main folder (`pd-*.jpg`). Slag X and Superbond+ pages include their YouTube videos.
-- New files: `indochain-updates.css` (loaded after `style.css`), `flipbook.js`, `foundry-products.js`.
-- `style.css` and `script.js` were NOT in the zip received, so they are not included here. Keep your existing copies next to these files.
+- **New `site.css` and `site.js` replace the old `style.css` / `script.js`** (every page now links to the new files; the old ones can be deleted). They contain the full design: header, 4-slide hero slider, footer, catalog, e-book viewer and product pages.
+- Home: 4-slide auto-sliding hero (container ship, foundry, mining, agriculture), catalog call-to-action card, port-cranes photo in the intro section, product photos on the Foundry / Agricultural cards (`division-foundry.jpg`, `division-agriculture.jpg` - replace either file with a higher-resolution photo of the same name).
+- Footer rebuilt on every page: address opens Google Maps, phone/email/WhatsApp/Instagram are links, Privacy / Terms / Sitemap pages added.
+- Catalog: book on a wooden shelf; e-book page-flip viewer (`flipbook.js`) with page grid, zoom in/out, full screen, share and PDF download.
+- Each foundry product has its own page; photos are `pd-*.jpg`. Slag X and Superbond+ pages embed their YouTube videos.
