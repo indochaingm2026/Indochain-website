@@ -43,6 +43,6 @@ This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
 - Home hero slide 1 now uses the container-ship photo (`hero-container-ocean.jpg`); fixed a missing quote in its CSS `url()`.
 - Home: the empty grey area under "View Full Catalog" is replaced by a catalog call-to-action card.
 - Catalog e-book (`catalog-ebook.html`) is now a page-flip book (`flipbook.js`): two-page spread on desktop, single page on phone.
-- Foundry Materials (`foundry-materials.html`) now has full product blocks (photos in `foundry/`): Bentobond, Exothermic Piping Compound, Patching Material, Slag X Conditioner, Sea Coal, Superbond+.
+- Each foundry product has its own page (bentobond.html, exothermic-piping-compound.html, patching-material.html, slag-x-conditioner.html, sea-coal.html, superbond-plus.html); product photos are in the main folder (`pd-*.jpg`). Slag X and Superbond+ pages include their YouTube videos.
 - New files: `indochain-updates.css` (loaded after `style.css`), `flipbook.js`, `foundry-products.js`.
 - `style.css` and `script.js` were NOT in the zip received, so they are not included here. Keep your existing copies next to these files.
