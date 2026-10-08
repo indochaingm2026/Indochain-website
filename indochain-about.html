@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About – Indochain Global Makmur</title>
+<style>
+:root {
+  --navy: #0f1d3d;
+  --body: #3b4a66;
+  --bg: #f3f6fb;
+  --red: #d7261e;
+  --blue: #1f5fd1;
+  --green: #14a04b;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif; color: var(--body); }
+body { -webkit-font-smoothing: antialiased; }
+
+header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e2e8f2;
+}
+.burger { width: 28px; display: grid; gap: 6px; }
+.burger span { height: 3px; background: var(--navy); border-radius: 2px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 13px; line-height: 1.1; color: #1c2a8a; letter-spacing: .3px; }
+.logo svg { width: 42px; height: 42px; }
+
+main { padding: 28px 20px 40px; }
+
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--blue); margin: 0 0 10px; }
+h1 { font-size: 30px; line-height: 1.12; color: var(--navy); margin: 0 0 20px; font-weight: 800; letter-spacing: -0.5px; }
+p { font-size: 17px; line-height: 1.6; margin: 0 0 18px; }
+
+.kw-red  { color: var(--red); font-weight: 700; }
+.kw-blue { color: var(--blue); font-weight: 700; }
+
+/* Liquid metal red catalog card */
+.metal-card {
+  position: relative; overflow: hidden; border-radius: 28px; padding: 30px 24px 28px; margin: 32px 0 8px;
+  background:
+    linear-gradient(115deg, rgba(255,255,255,0) 30%, rgba(255,255,255,.85) 45%, rgba(255,255,255,0) 60%),
+    linear-gradient(160deg, #f7e3e1 0%, #e05a52 22%, #9e1410 42%, #f2b4ad 55%, #c42a22 74%, #6e0b08 100%);
+  background-size: 220% 220%, 100% 100%;
+  animation: flow 9s ease-in-out infinite;
+  box-shadow: 0 22px 40px -18px rgba(158,20,16,.55), inset 0 1px 0 rgba(255,255,255,.6);
+}
+@keyframes flow {
+  0%,100% { background-position: 0% 50%, 0 0; }
+  50% { background-position: 100% 50%, 0 0; }
+}
+.metal-card::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(circle at 80% 10%, rgba(255,255,255,.55), transparent 45%);
+}
+.metal-card .eyebrow { color: var(--red); position: relative; z-index: 1; }
+.metal-card h2 { position: relative; z-index: 1; font-size: 26px; line-height: 1.15; color: #1a0606; margin: 0 0 12px; font-weight: 800; }
+.metal-card h2 .kw-red { color: #b3120c; }
+.metal-card p { position: relative; z-index: 1; color: #3a1412; font-size: 16px; margin-bottom: 22px; }
+.metal-card p .kw-red { color: #b3120c; }
+.btn {
+  position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; padding: 17px 20px; border-radius: 999px; border: none; cursor: pointer;
+  background: #ffffff; color: #b3120c; font-weight: 800; font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
+  box-shadow: 0 8px 18px -8px rgba(60,0,0,.5);
+}
+
+.whatsapp {
+  position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 20;
+  background: #25d366; color: #fff; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 999px;
+  box-shadow: 0 10px 22px -8px rgba(37,211,102,.7); text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="burger" aria-label="Menu"><span></span><span></span><span></span></div>
+  <div class="logo">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,4 90,27 90,73 50,96 10,73 10,27" fill="none" stroke="#1c2a8a" stroke-width="7"/>
+      <path d="M30 66 V36 L50 56 L70 36 V66" fill="none" stroke="#14a04b" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="44" y="20" width="12" height="10" fill="#d7261e"/>
+      <rect x="44" y="62" width="12" height="18" fill="#d7261e" opacity="0"/>
+    </svg>
+    <span>INDOCHAIN<br>GLOBAL<br>MAKMUR</span>
+  </div>
+</header>
+
+<main>
+  <p class="eyebrow">Company Profile</p>
+  <h1>About PT Indochain Global Makmur</h1>
+
+  <p>PT Indochain Global Makmur is an Indonesia-based trading and distribution company and a sister company of <span class="kw-blue">New Chien Te Hang Co., Ltd.</span>, Taiwan. (見得行股份有限公司)</p>
+
+  <p>Supported by the experience, expertise, and international network of our <span class="kw-blue">Taiwan-based sister company</span>, we are committed to connecting global suppliers with customers in Indonesia and international markets through reliable sourcing, quality products, and professional service.</p>
+
+  <p>Our business focuses on the supply and distribution of <span class="kw-red">foundry &amp; casting materials</span>, refractory products, industrial chemicals, and other specialized industrial materials, serving a wide range of industrial applications.</p>
+
+  <p>PT Indochain Global Makmur also serves as the distributor of <span class="kw-blue">NCTH’s PLUS+</span> products in Indonesia, providing local customers with access to trusted products backed by the experience and expertise of <span class="kw-blue">NCTH</span>.</p>
+
+  <section class="metal-card" aria-label="Foundry catalog">
+    <p class="eyebrow"><span class="kw-red">Foundry</span> Catalog</p>
+    <h2>Browse our <span class="kw-red">foundry</span> catalog</h2>
+    <p>Flip through our <span class="kw-red">foundry</span> e-book and explore our <span class="kw-red">casting materials</span> in one place.</p>
+    <button class="btn" type="button">View foundry catalog →</button>
+  </section>
+</main>
+
+<a class="whatsapp" href="#" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+</body>
+</html>
