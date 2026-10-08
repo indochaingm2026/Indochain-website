@@ -45,3 +45,5 @@ This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
 - Footer rebuilt on every page: address opens Google Maps, phone/email/WhatsApp/Instagram are links, Privacy / Terms / Sitemap pages added.
 - Catalog: book on a wooden shelf; e-book page-flip viewer (`flipbook.js`) with page grid, zoom in/out, full screen, share and PDF download.
 - Each foundry product has its own page; photos are `pd-*.jpg`. Slag X and Superbond+ pages embed their YouTube videos.
+- Update: new pages `automatic-molding-machine.html` and `oxygen-rotary-furnace.html`; Patching Material is one entry with grade cards (R90-R66S); tables fit the phone screen; e-book page list fixed.
+- Update: Automatic Green Sand Control System and Vibrator pages added; Oxygen Rotary Furnace text completed.

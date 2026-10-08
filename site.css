@@ -559,3 +559,27 @@ body.ic-no-scroll{overflow:hidden}
 .ic-flip.is-full .ic-flip-count{background:#0d1c3b;color:#c9d6f2}
 .ic-flip.is-full .ic-flip-bar button,.ic-flip.is-full .ic-flip-bar a{background:#14274d;color:#fff}
 @media(max-width:420px){.ic-flip-bar button,.ic-flip-bar a{width:46px}.ic-flip-count{min-width:70px}}
+
+/* ---------- update: tables fit the screen, grade cards, footer, thumbs ---------- */
+.footer-contact-row{align-items:center}
+.ic-table-wrap{overflow:visible}
+.ic-table{min-width:0;width:100%;table-layout:auto;font-size:.9rem}
+.ic-table th,.ic-table td{padding:10px 8px;overflow-wrap:anywhere;word-break:normal}
+.ic-table th{font-size:.76rem;letter-spacing:0}
+.ic-table td:first-child,.ic-table th:first-child{width:38%;text-align:left}
+.ic-table .ic-up{display:block;width:fit-content;margin:5px auto 0}
+.ic-scroll-hint{display:none!important}
+.ic-thumbs{flex-wrap:wrap}
+.ic-thumbs button{width:60px;height:60px}
+.ic-grade-grid{display:grid;gap:12px}
+.ic-grade-card{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.ic-grade-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 14px;background:var(--navy);color:#fff}
+.ic-grade-head b{font-size:1.1rem}
+.ic-grade-head span{font-size:.74rem;letter-spacing:.06em;opacity:.85}
+.ic-grade-card dl{display:grid;grid-template-columns:1fr 1fr 1fr;margin:0}
+.ic-grade-card dl>div{padding:9px 14px;border-top:1px solid var(--line)}
+.ic-grade-card dl>div.wide{grid-column:1/-1}
+.ic-grade-card dt{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--blue)}
+.ic-grade-card dd{margin:2px 0 0;color:var(--ink);font-weight:600;font-size:.92rem;line-height:1.35}
+.ic-grade-card dl>div:nth-child(4),.ic-grade-card dl>div:nth-child(5){grid-column:span 1}
+@media(min-width:760px){.ic-grade-grid{grid-template-columns:1fr 1fr}}
