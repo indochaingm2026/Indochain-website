@@ -47,3 +47,4 @@ This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
 - Each foundry product has its own page; photos are `pd-*.jpg`. Slag X and Superbond+ pages embed their YouTube videos.
 - Update: new pages `automatic-molding-machine.html` and `oxygen-rotary-furnace.html`; Patching Material is one entry with grade cards (R90-R66S); tables fit the phone screen; e-book page list fixed.
 - Update: Automatic Green Sand Control System and Vibrator pages added; Oxygen Rotary Furnace text completed.
+- Update: new home/about/products/contact wording, redesigned contact cards, Vibrator info, Slag Remover page removed from the e-book and PDF (6 pages), NCTH logo (links to ncth.com.tw) in the footer.

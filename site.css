@@ -583,3 +583,28 @@ body.ic-no-scroll{overflow:hidden}
 .ic-grade-card dd{margin:2px 0 0;color:var(--ink);font-weight:600;font-size:.92rem;line-height:1.35}
 .ic-grade-card dl>div:nth-child(4),.ic-grade-card dl>div:nth-child(5){grid-column:span 1}
 @media(min-width:760px){.ic-grade-grid{grid-template-columns:1fr 1fr}}
+
+/* ---------- update: footer NCTH badge, contact page ---------- */
+.footer-ncth{display:inline-flex;flex-direction:column;gap:8px;margin-top:22px;text-decoration:none}
+.footer-ncth small{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#8ea0c6;font-weight:600}
+.footer-ncth-logo{display:inline-block;background:#fff;border-radius:10px;padding:6px;line-height:0;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s}
+.footer-ncth-logo img{display:block;width:150px;height:auto;border-radius:6px}
+.footer-ncth:hover .footer-ncth-logo{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.contact-list{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.contact-row{display:flex;align-items:center;gap:16px;padding:15px 16px;border:1px solid var(--line);border-radius:14px;background:#fff;text-decoration:none;box-shadow:0 6px 18px rgba(15,31,61,.05);transition:transform .2s,box-shadow .2s,border-color .2s}
+.contact-row:hover{transform:translateY(-2px);border-color:#b9d3f2;box-shadow:0 12px 26px rgba(15,31,61,.12)}
+.contact-ico{flex:0 0 auto;width:48px;height:48px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#e8f1fc;color:var(--blue)}
+.contact-ico svg{width:22px;height:22px;fill:currentColor}
+.c-wa .contact-ico{background:#e2f8ea;color:#1da851}
+.c-ig .contact-ico{background:#fdeaf1;color:#d6296b}
+.c-mail .contact-ico{background:#e9edfb;color:#2c4fc4}
+.contact-txt{display:grid;gap:2px;min-width:0;flex:1}
+.contact-txt small{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--blue)}
+.contact-txt b{color:var(--ink);font-weight:700;font-size:1.02rem;line-height:1.4;overflow-wrap:anywhere}
+.contact-go{color:#9fb3d1;font-size:1.2rem;transition:transform .2s,color .2s}
+.contact-row:hover .contact-go{transform:translateX(3px);color:var(--blue)}
+.map-wrap{margin-top:22px}
+.map-wrap iframe{border-radius:14px;box-shadow:0 8px 24px rgba(15,31,61,.12)}
+.map-directions{margin-top:14px;width:100%}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,34px);box-shadow:0 12px 32px rgba(15,31,61,.08);align-self:start}
+@media(min-width:640px){.map-directions{width:auto}}
