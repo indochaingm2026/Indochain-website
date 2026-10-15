@@ -48,3 +48,11 @@ This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
 - Update: new pages `automatic-molding-machine.html` and `oxygen-rotary-furnace.html`; Patching Material is one entry with grade cards (R90-R66S); tables fit the phone screen; e-book page list fixed.
 - Update: Automatic Green Sand Control System and Vibrator pages added; Oxygen Rotary Furnace text completed.
 - Update: new home/about/products/contact wording, redesigned contact cards, Vibrator info, Slag Remover page removed from the e-book and PDF (6 pages), NCTH logo (links to ncth.com.tw) in the footer.
+
+### Language switch (English / Bahasa Indonesia / 繁體中文)
+- Every page has an **EN | ID | 中文** switch in the header (desktop and phone). The choice is remembered in the visitor's browser. Links ending in `?lang=id` or `?lang=zh` open the site in Indonesian or Traditional Chinese.
+- `i18n.js` runs the switch. `i18n-id.js` (Indonesian) and `i18n-zh.js` (Traditional Chinese) hold the text as pairs: `"English text": "translation"`.
+- When you change English wording on a page, add the new sentence to both `i18n-id.js` and `i18n-zh.js`. Anything missing stays in English in that language.
+- Kept in English on purpose: brand and product names (Superbond+, Slag X Conditioner, Oxygen Rotary Furnace, NCTH, etc.), addresses, and the e-book PDF and its page images.
+- The Indonesian text is applied in the browser. Search engines index the English HTML. Indonesian search traffic would need separate `/id/` pages.
+- `seo_setup.py` writes English titles and descriptions. If you change one there, update its entry in `i18n-id.js`.

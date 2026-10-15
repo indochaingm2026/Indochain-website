@@ -608,3 +608,19 @@ body.ic-no-scroll{overflow:hidden}
 .map-directions{margin-top:14px;width:100%}
 .form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,34px);box-shadow:0 12px 32px rgba(15,31,61,.08);align-self:start}
 @media(min-width:640px){.map-directions{width:auto}}
+
+/* ---------- language switch (English / Bahasa Indonesia) ---------- */
+.header-end{grid-column:3;justify-self:end;display:flex;align-items:center;gap:12px}
+.lang-switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+.lang-switch button{border:0;background:none;font:inherit;font-size:.74rem;font-weight:700;letter-spacing:.08em;color:var(--ink);padding:8px 12px;cursor:pointer;line-height:1}
+.lang-switch button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.lang-switch button:hover:not([aria-pressed="true"]){color:var(--blue)}
+.lang-switch button:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+@media(max-width:999px){.header-inner{grid-template-columns:88px 1fr 88px}}
+
+/* Traditional Chinese: use a CJK-capable font stack */
+html[lang="zh-Hant"],html[lang="zh-Hant"] body,html[lang="zh-Hant"] h1,html[lang="zh-Hant"] h2,html[lang="zh-Hant"] h3,html[lang="zh-Hant"] h4,html[lang="zh-Hant"] button,html[lang="zh-Hant"] input,html[lang="zh-Hant"] textarea{font-family:"Inter","PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
+html[lang="zh-Hant"] body{letter-spacing:0}
+.lang-switch button{min-width:0}
+@media(max-width:999px){.lang-switch button{padding:7px 9px}.header-end{gap:0}.header-inner{grid-template-columns:104px 1fr 104px}}
+.lang-switch button{white-space:nowrap}

@@ -106,12 +106,12 @@
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       var v = Array.prototype.map.call(f.querySelectorAll('input,select,textarea'), function (el) {
-        return (el.placeholder || 'Product interest') + ': ' + el.value;
+        return (el.placeholder || (window.icT ? icT('Product interest') : 'Product interest')) + ': ' + el.value;
       }).join('\n');
-      var subject = 'Inquiry from indochain.co.id';
+      var subject = window.icT ? icT('Inquiry from indochain.co.id') : 'Inquiry from indochain.co.id';
       location.href = 'mailto:info@indochain.co.id?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(v);
       var m = f.querySelector('.form-message');
-      if (m) m.textContent = 'Opening your email app to send the inquiry…';
+      if (m) m.textContent = window.icT ? icT('Opening your email app to send the inquiry…') : 'Opening your email app to send the inquiry…';
     });
   });
 })();

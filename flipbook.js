@@ -40,7 +40,7 @@
     f.className = 'ic-face';
     var im = new Image();
     im.src = srcs[i];
-    im.alt = 'Foundry Product E-book page ' + (i + 1);
+    im.alt = (window.icT ? icT('Foundry Product E-book page') : 'Foundry Product E-book page') + ' ' + (i + 1);
     im.draggable = false;
     f.appendChild(im);
     return f;
@@ -222,7 +222,7 @@
     srcs.forEach(function (s, i) {
       var b = document.createElement('button');
       b.type = 'button';
-      b.setAttribute('aria-label', 'Go to page ' + (i + 1));
+      b.setAttribute('aria-label', (window.icT ? icT('Go to page') : 'Go to page') + ' ' + (i + 1));
       b.innerHTML = '<img src="' + s + '" alt="" loading="lazy"><span>' + (i + 1) + '</span>';
       b.addEventListener('click', function (e) {
         e.stopPropagation();
@@ -258,9 +258,9 @@
     if (navigator.share) { navigator.share(data).catch(function () {}); return; }
     if (navigator.clipboard) {
       navigator.clipboard.writeText(location.href).then(function () {
-        shareBtn.setAttribute('title', 'Link copied');
+        shareBtn.setAttribute('title', window.icT ? icT('Link copied') : 'Link copied');
         shareBtn.classList.add('is-on');
-        setTimeout(function () { shareBtn.classList.remove('is-on'); shareBtn.setAttribute('title', 'Share'); }, 1600);
+        setTimeout(function () { shareBtn.classList.remove('is-on'); shareBtn.setAttribute('title', window.icT ? icT('Share') : 'Share'); }, 1600);
       });
     }
   });
