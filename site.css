@@ -624,3 +624,10 @@ html[lang="zh-Hant"] body{letter-spacing:0}
 .lang-switch button{min-width:0}
 @media(max-width:999px){.lang-switch button{padding:7px 9px}.header-end{gap:0}.header-inner{grid-template-columns:104px 1fr 104px}}
 .lang-switch button{white-space:nowrap}
+
+/* Smooth fade when switching site languages */
+html.lang-switching-out body { opacity: 0; transform: translateY(3px); }
+html.lang-switching-in body { opacity: 0; transform: translateY(3px); }
+html.lang-switching-in.lang-transition-ready body { opacity: 1; transform: translateY(0); }
+html body { transition: opacity .18s ease, transform .18s ease; }
+@media (prefers-reduced-motion: reduce) { html body { transition: none !important; } }

@@ -123,12 +123,14 @@
       b.addEventListener('click', function () {
         if (LANG === lab.code) return;
         saveLang(lab.code);
+        try { sessionStorage.setItem('ic-lang-transition', '1'); } catch (e) { /* ignore */ }
+        document.documentElement.classList.add('lang-switching-out');
         try {
           var u = new URL(location.href);
           u.searchParams.delete('lang');
           history.replaceState(null, '', u.pathname + (u.search || '') + u.hash);
         } catch (e) { /* ignore */ }
-        location.reload();
+        window.setTimeout(function () { location.reload(); }, 160);
       });
       wrap.appendChild(b);
     });
@@ -148,6 +150,15 @@
 
   /* ---------- start ---------- */
   function init() {
+    try {
+      if (sessionStorage.getItem('ic-lang-transition') === '1') {
+        sessionStorage.removeItem('ic-lang-transition');
+        document.documentElement.classList.add('lang-switching-in');
+        requestAnimationFrame(function () {
+          document.documentElement.classList.add('lang-transition-ready');
+        });
+      }
+    } catch (e) { /* ignore */ }
     mountSwitch();
     if (LANG === 'en') return;
     document.documentElement.setAttribute('lang', HTML_LANG[LANG]);
