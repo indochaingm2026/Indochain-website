@@ -28,7 +28,7 @@ window.IC_ID = {
   "3.5% max": "3,5% maks",
   "30 kg / Drum, 25 kg / Bag": "30 kg / Drum, 25 kg / Karung",
   "6 pages · English": "6 halaman · Bahasa Inggris",
-  "A subsidiary of": "Anak perusahaan dari",
+  "A subsidiary of": "Perusahaan Afiliasi dari",
   "A trusted bridge for reliable sourcing, quality products and professional international trade.": "Mitra tepercaya untuk pengadaan yang andal, produk berkualitas, dan layanan perdagangan internasional yang profesional.",
   "AB automatic viscosity control system": "Sistem kontrol viskositas otomatis AB",
   "ABOUT": "TENTANG",

@@ -29,7 +29,7 @@ window.IC_ZH = {
   "3.5% max": "最高 3.5%",
   "30 kg / Drum, 25 kg / Bag": "30 公斤／桶，25 公斤／袋",
   "6 pages · English": "6 頁 · 英文版",
-  "A subsidiary of": "旗下子公司",
+  "A subsidiary of": "旗下分公司",
   "A trusted bridge for reliable sourcing, quality products and professional international trade.": "值得信賴的合作夥伴，提供可靠的採購服務、優質產品與專業的國際貿易支援。",
   "AB automatic viscosity control system": "AB 自動黏度控制系統",
   "ABOUT": "關於我們",
