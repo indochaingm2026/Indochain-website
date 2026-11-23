@@ -56,3 +56,9 @@ This is a static HTML/CSS/JavaScript site suitable for deployment on Vercel.
 - Kept in English on purpose: brand and product names (Superbond+, Slag X Conditioner, Oxygen Rotary Furnace, NCTH, etc.), addresses, and the e-book PDF and its page images.
 - The Indonesian text is applied in the browser. Search engines index the English HTML. Indonesian search traffic would need separate `/id/` pages.
 - `seo_setup.py` writes English titles and descriptions. If you change one there, update its entry in `i18n-id.js`.
+
+### Update (Nov 2026) — name and data corrections from the 2026 company profile (ID/EN/ZH) and product catalog
+- Product names now follow the company profile: High Strength Plastic (ID: Semen Tahan Api Pre-Mix), Exothermic Anti-Piping Compound, SLAG X, Plus+ Low Ash Sea Coal / Coal Dust, SUPER BOND+, Plus+ BentoBond, NCTH Vibrator, Green Sand Control (GSC): ETA 3000, Belloi & Romagnoli Casting Equipment, Oxygen Rotary Furnace. File names/URLs are unchanged.
+- Patching page: grade table rebuilt from the catalog (R91, R90, R71, R70, R66S alumina base; R81, R80, R66 silica base). Packing "Drum" is now "Tub"; packing shown only where the profile states it (R90 tub 30 kg; R70, R80, R66 bag 25 kg).
+- Fixed: Sea Coal packing, SUPER BOND+ metals and characteristics, Exothermic metals, Vibrator sizes, "Jian De Xing" -> NCTH, "point saving" -> energy saving, ZH/ID terms.
+- `seo_setup.py` and `llms.txt` carry the same names, so re-running the script keeps them.

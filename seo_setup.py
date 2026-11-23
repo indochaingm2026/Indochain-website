@@ -39,7 +39,7 @@ PAGES = {
     "index.html": (
         "PT Indochain | Foundry & Casting Materials Supplier in Indonesia",
         "Indonesia supplier of foundry and casting materials: exothermic powder, bentonite binder, "
-        "patching material, sea coal and Superbond+. Sister company of NCTH, Taiwan.",
+        "patching material, sea coal and SUPER BOND+. Sister company of NCTH, Taiwan.",
         "hero-foundry.jpg", "home", None),
     "about.html": (
         "About PT Indochain Global Makmur | Sister Company of NCTH, Taiwan",
@@ -54,7 +54,7 @@ PAGES = {
     "foundry-materials.html": (
         "Foundry & Casting Materials Indonesia | PT Indochain",
         "Foundry and casting materials supplied in Indonesia: exothermic powder, patching material, "
-        "bentonite binder, sea coal, Slag X Conditioner and Superbond+.",
+        "bentonite binder, sea coal, SLAG X and SUPER BOND+.",
         "foundry-division.jpg", "page", "products.html"),
     "agricultural-products.html": (
         "Agricultural & Food Products from Indonesia | PT Indochain",
@@ -99,43 +99,43 @@ PAGES = {
         "logo-transparent.png", "page", None),
     # ----- product pages -----
     "exothermic-piping-compound.html": (
-        "Exothermic Powder (Exothermic Piping Compound) | NCTH | PT Indochain",
-        "Exothermic powder for foundries in Indonesia. Exothermic piping compound that prevents piping "
+        "Exothermic Anti-Piping Compound (Exothermic Powder) | NCTH | PT Indochain",
+        "Exothermic powder for foundries in Indonesia. Exothermic anti-piping compound that prevents piping "
         "defects in castings after pouring. Supplied by PT Indochain.",
         "pd-exothermic-1.jpg", "product", "foundry-materials.html"),
     "bentobond.html": (
-        "Bentobond Bentonite Binder for Green Sand | PT Indochain",
-        "Bentobond PLUS+ bentonite binder for green sand molding, supplied in Indonesia by PT Indochain. "
+        "Plus+ BentoBond Bentonite Binder for Green Sand | PT Indochain",
+        "Plus+ BentoBond bentonite binder for green sand molding, supplied in Indonesia by PT Indochain. "
         "Comparable to natural sodium bentonite in tests.",
         "pd-bentobond.jpg", "product", "foundry-materials.html"),
     "patching-material.html": (
-        "Patching Material for Ladles, Runners & Furnaces | PT Indochain",
-        "Patching material for repairing ladles, runners and furnaces. Alumina/silica grades R90 to R80 "
-        "and silica grade R66S. Supplied in Indonesia by PT Indochain.",
+        "High Strength Plastic Patching Material for Furnaces, Ladles & Runners | PT Indochain",
+        "Patching material for repairing ladles, runners and furnaces. Alumina-base grades R91, R90, R71, R70, R66S and silica-base grades R81, R80, R66."
+        " Supplied in Indonesia by PT Indochain.",
         "pd-patching-1.jpg", "product", "foundry-materials.html"),
     "sea-coal.html": (
-        "Sea Coal (Coal Dust) for Green Sand | PT Indochain",
-        "Sea coal (coal dust) for green sand molding to improve casting surfaces and ease demolding. "
+        "Plus+ Low Ash Sea Coal / Coal Dust for Green Sand | PT Indochain",
+        "Plus+ Low Ash Sea Coal (coal dust) for green sand molding to improve casting surfaces and ease demolding. "
         "Foundry supplier in Indonesia: PT Indochain.",
         "pd-sea-coal.jpg", "product", "foundry-materials.html"),
     "slag-x-conditioner.html": (
-        "Slag X Conditioner Melt Additive | PT Indochain",
-        "SLAG X Conditioner, a melt additive that alters slag and purifies molten metal for better energy "
+        "SLAG X Slag Softener & Metal Purifier | PT Indochain",
+        "SLAG X, a melt additive that alters slag and purifies molten metal for better energy "
         "efficiency in electric induction melting. Supplied in Indonesia by PT Indochain.",
         "pd-slag-x-1.jpg", "product", "foundry-materials.html"),
     "superbond-plus.html": (
-        "Superbond+ Green Sand Additive | PT Indochain",
-        "Superbond+ green sand additive that strengthens sand, stabilizes the mold surface and lets more "
+        "SUPER BOND+ Green Sand Additive | PT Indochain",
+        "SUPER BOND+ green sand additive that strengthens sand, stabilizes the mold surface and lets more "
         "sand be recycled. Supplied in Indonesia by PT Indochain.",
         "pd-superbond.jpg", "product", "foundry-materials.html"),
     "automatic-green-sand-control-system.html": (
-        "Automatic Green Sand Control System ETA 3000 | PT Indochain",
+        "Green Sand Control (GSC): ETA 3000 | PT Indochain",
         "Automatic green sand control system (ETA 3000) for measuring and controlling compactability, "
         "green compression strength and moisture in foundry sand.",
         "gsc-1.jpg", "product", "products.html"),
     "automatic-molding-machine.html": (
-        "Automatic Molding Machine by Belloi & Romagnoli | PT Indochain",
-        "Automatic molding machine from Belloi & Romagnoli, Italy, offered through New Chien Te Hang (NCTH) "
+        "Belloi & Romagnoli Casting Equipment, Italy | PT Indochain",
+        "Casting equipment from Belloi & Romagnoli, Italy, offered through New Chien Te Hang (NCTH) "
         "for the casting industry.",
         "mm-1.jpg", "product", "products.html"),
     "oxygen-rotary-furnace.html": (
